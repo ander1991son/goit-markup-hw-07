@@ -1,0 +1,212 @@
+@charset "UTF-8";
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.backdrop-padding {
+  padding: 93px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.is-hidden {
+  opacity: 0 !important;
+  z-index: -1;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 581px;
+  width: 528px;
+  margin: 0 auto;
+  background-color: var(--white-color);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.modal-margin {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.modal-close {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  width: 30px;
+  height: 30px;
+  padding-bottom: 2px;
+  border-radius: 100%;
+  z-index: 1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-padding {
+  padding: 40px;
+}
+
+.form-p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.form-p-padding {
+  margin-bottom: 12px;
+}
+
+.svg-form {
+  position: absolute;
+  top: 50%;
+  left: 3.5%;
+  transform: translateY(-30%);
+  fill: #212121;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea {
+  resize: none;
+  font-size: 14px;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.modal-textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-padding-margin {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+}
+
+.form-field-checkbox {
+  position: relative;
+  text-align: center;
+}
+
+.input-checkbox {
+  display: none; /* Oculta el checkbox original */
+}
+
+.checkbox-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px; /* Ajustar según el tamaño del checkbox */
+  height: 16px; /* Ajustar según el tamaño del checkbox */
+  background-color: transparent;
+  border: 1px solid black; /* Ajustar según el diseño deseado */
+}
+
+.input-checkbox:checked + .checkbox-custom::after {
+  content: ""; /* Crea el chulito */
+  position: absolute;
+  top: 3px; /* Ajustar según el diseño deseado */
+  left: 5px; /* Ajustar según el diseño deseado */
+  width: 5px; /* Ajustar según el diseño deseado */
+  height: 10px; /* Ajustar según el diseño deseado */
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg); /* Gira el chulito */
+}
+
+.input-checkbox:checked + .checkbox-custom {
+  background-color: var(--blue-color); /* Color de fondo azul cuando el checkbox está marcado */
+}
+
+.form-field-span {
+  padding-left: 25px; /* Agrega un espacio para el chulito */
+}
+
+.form-field-span {
+  padding-left: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #757575;
+  text-align: initial;
+}
+
+.div-form-button {
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-form {
+  width: 200px;
+  height: 50px;
+}
+
+.modal-imput {
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-imput:hover {
+  border: 1px solid #2196f3;
+}
+
+.modal-imput:hover + .svg-form {
+  fill: var(--blue-color);
+}
+
+.from-input-font {
+  font-size: 14px;
+}
+
+.from-input-margin-padding {
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--grey-color);
+  cursor: pointer;
+}/*# sourceMappingURL=modal.css.map */

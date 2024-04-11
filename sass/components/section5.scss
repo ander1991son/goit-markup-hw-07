@@ -1,0 +1,37 @@
+.svg-clientes {
+  margin-bottom: 151px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.svg-cliente {
+  border: 1px solid $grey-color;
+  width: 170px;
+  height: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition-property: color;
+}
+
+.svg-cliente {
+  border: solid 1px rgba(175, 177, 184, 1);
+  border-radius: 4px;
+}
+
+.svg-cliente:hover svg {
+  fill: $blue-color;
+}
+
+.svg-cliente:hover {
+  border: 1px solid $blue-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-group {
+  fill: $grey-color;
+}

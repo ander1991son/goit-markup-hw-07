@@ -1,0 +1,42 @@
+.ul-svg {
+  display: flex;
+  gap: 30px;
+}
+
+.li-svg {
+  background-color: rgba(245, 244, 250, 1);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.svg-tecno {
+  border-radius: 4px;
+  width: 70px;
+  height: 70px;
+}
+
+.ul-flex {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.li-service {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-p {
+  color: $grey-color;
+  line-height: 24px;
+}
+
+.main-h3 {
+  color: $grey-color;
+}
